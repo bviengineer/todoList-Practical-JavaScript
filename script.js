@@ -6,7 +6,11 @@ var todoList = {
     } else {
         console.log("My Todos:");  
         for(var i = 0; i < this.todos.length; i++){
-        console.log(this.todos[i].todoText);  
+        if(this.todos[i].completed === true){
+          console.log("(x)", this.todos[i].todoText);
+        } else {
+          console.log("( )", this.todos[i].todoText);
+        }
       }  
     }
   },
@@ -25,7 +29,7 @@ var todoList = {
     this.todos.splice(position, 1);
     this.displayTodos();
   },
-  toggleCompleted: function(position){  //parenthesis did not show up for me when the toggleComleted command was executed
+  toggleCompleted: function(position){ 
     var todo = this.todos[position];
     todo.completed = !todo.completed;
     this.displayTodos();
