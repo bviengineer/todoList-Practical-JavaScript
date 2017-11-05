@@ -22,8 +22,13 @@
     <div>
       <input type="number" placeholder="enter a number" id="changeTodoPositionInput">
       <input type="text" placeholder="choose a task" id="changeTodoTextInput">
-      <button onclick="handlers.changeTodo">Change Todo</button>
+      <button onclick="handlers.changeTodo()">Change Todo</button>
+    </div>
+    <div>
+      <input type="number" placeholder="type number for item to be deleted" id="deleteTodoPositionInput">
+      <button onclick="handlers.deleteTodo()">Delete Todos</button>
     </div>
     <script src="script.js"></script>
   </body>
+
 </html>
