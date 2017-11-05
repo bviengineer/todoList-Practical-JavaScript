@@ -9,9 +9,21 @@
     <h1>Todo List</h1>
     <!--<button id="displayTodosButton">Dispay Todos</button>-->
     <!--<button id="toggleAllButton">Toggle All</button>-->
+    <div>
+      <button onclick="handlers.displayTodos()">Dispay Todos</button>
+      <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
     
-    <button onclick="handlers.displayTodos()">Dispay Todos</button>
-    <button onclick="handlers.toggleAll()">Toggle All</button>
+    <div>
+      <input type="text" placeholder="enter your task" id="addTodoTextInput">
+      <button onclick="handlers.addTodo()">Add Todos</button>
+    </div>
+    
+    <div>
+      <input type="number" placeholder="enter a number" id="changeTodoPositionInput">
+      <input type="text" placeholder="choose a task" id="changeTodoTextInput">
+      <button onclick="handlers.changeTodo">Change Todo</button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
